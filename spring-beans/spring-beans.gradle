@@ -35,3 +35,12 @@ compileKotlin.dependsOn(compileGroovy)
 compileKotlin.classpath += files(compileGroovy.destinationDir)
 
 
+//compileGroovy.dependsOn = compileGroovy.taskDependencies.values - "compileJava"
+//compileKotlin.dependsOn(compileGroovy)
+//compileKotlin.classpath += files(compileGroovy.destinationDir)
+
+//compileGroovy.dependsOn = compileGroovy.taskDependencies.immutableValues + compileGroovy.taskDependencies.mutableValues - "compileJava"
+//compileKotlin.dependsOn(compileGroovy)
+//compileKotlin.classpath += files(compileGroovy.destinationDir)
+
+
